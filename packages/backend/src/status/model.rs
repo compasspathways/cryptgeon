@@ -13,6 +13,7 @@ pub struct Status {
     pub theme_new_note_notice: bool,
     // Theme
     pub theme_image: String,
+    pub theme_image_dark: String,
     pub theme_text: String,
     pub theme_page_title: String,
     pub theme_favicon: String,

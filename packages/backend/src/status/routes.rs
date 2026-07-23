@@ -14,6 +14,7 @@ async fn get_status() -> impl Responder {
         allow_files: *config::ALLOW_FILES,
         theme_new_note_notice: *config::THEME_NEW_NOTE_NOTICE,
         theme_image: config::THEME_IMAGE.to_string(),
+        theme_image_dark: config::THEME_IMAGE_DARK.to_string(),
         theme_text: config::THEME_TEXT.to_string(),
         theme_page_title: config::THEME_PAGE_TITLE.to_string(),
         theme_favicon: config::THEME_FAVICON.to_string(),

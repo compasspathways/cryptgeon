@@ -50,6 +50,10 @@ lazy_static! {
         .unwrap_or("".to_string())
         .parse()
         .unwrap();
+    pub static ref THEME_IMAGE_DARK: String = std::env::var("THEME_IMAGE_DARK")
+        .unwrap_or("".to_string())
+        .parse()
+        .unwrap();
     pub static ref THEME_TEXT: String = std::env::var("THEME_TEXT")
         .unwrap_or("".to_string())
         .parse()

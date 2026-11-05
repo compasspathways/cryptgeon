@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { build, context } from 'esbuild'
-import pkg from '../package.json' assert { type: 'json' }
+import pkg from '../package.json' with { type: 'json' }
 
 const common = {
   bundle: true,

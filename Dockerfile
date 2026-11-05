@@ -1,5 +1,5 @@
 # FRONTEND
-FROM node:20-alpine as client 
+FROM node:22-alpine as client
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable
@@ -19,7 +19,7 @@ RUN cargo build --release
 
 
 # RUNNER
-FROM alpine:3.19
+FROM alpine:3.23
 WORKDIR /app
 RUN apk add --no-cache curl 
 COPY --from=backend /tmp/target/release/cryptgeon .
